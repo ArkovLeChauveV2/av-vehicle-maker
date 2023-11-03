@@ -18,6 +18,6 @@ function AVVehMaker:AddVehicle(vehInfos)
         KeyValues = vehInfos.keyvalues,
     })
 
-    if vehInfos.bodygroups then AVVehMaker.Bodygroups["vmaker_" .. vehInfos.class] = vehInfos.bodygroups end
-    if vehInfos.texture then AVVehMaker.Mats["vmaker_" .. vehInfos.class] = vehInfos.texture end
+    if SERVER && vehInfos.bodygroups then AVVehMaker.Bodygroups["vmaker_" .. vehInfos.class] = vehInfos.bodygroups end
+    if SERVER && vehInfos.texture then AVVehMaker.Mats["vmaker_" .. vehInfos.class] = vehInfos.texture end
 end

@@ -12,6 +12,6 @@ hook.Add("PlayerSpawnedVehicle", "AVVEHMAKER:SetProperties", function(ply, ent)
     end
 
     if AVVehMaker.Mats[vehClass] then
-        ent:SetMaterial(AVVehMaker.Mats[vehClass])
+        ent:SetSubMaterial(0, AVVehMaker.Mats[vehClass])
     end
 end)
