@@ -10,6 +10,6 @@ N/A
 
 ## How to add new vehicles for my reskins ?
 I simplified the adding of vehicles with an in-game panel:
-https://github.com/ArkovLeChauveV2/av-vehicle-maker
+https://github.com/ArkovLeChauveV2/av-vehicle-maker-reskiner-pack
 
 Install it and follow the configuration guide.
