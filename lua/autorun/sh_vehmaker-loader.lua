@@ -5,12 +5,15 @@ AVVehMaker = AVVehMaker || {}
 if SERVER then
     AddCSLuaFile("av-vehicle-maker/sh_meta.lua")
     AddCSLuaFile("av-vehicle-maker/sh_vehicle.lua")
+    AddCSLuaFile("av-vehicle-maker/sh_configuration.lua")
 
     include("av-vehicle-maker/sh_meta.lua")
     include("av-vehicle-maker/sh_vehicle.lua")
+    include("av-vehicle-maker/sh_configuration.lua")
 
     include("av-vehicle-maker/sv_hooks.lua")
 else
     include("av-vehicle-maker/sh_meta.lua")
     include("av-vehicle-maker/sh_vehicle.lua")
+    include("av-vehicle-maker/sh_configuration.lua")
 end
