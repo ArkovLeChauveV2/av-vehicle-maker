@@ -2,7 +2,6 @@
 
 if SERVER then
     AVVehMaker.Bodygroups = {}
-    AVVehMaker.Submats = {}
     AVVehMaker.Mats = {}
 end
 
@@ -20,6 +19,5 @@ function AVVehMaker:AddVehicle(vehInfos)
     })
 
     if vehInfos.bodygroups then AVVehMaker.Bodygroups["vmaker_" .. vehInfos.class] = vehInfos.bodygroups end
-    if vehInfos.submaterials then AVVehMaker.Submats["vmaker_" .. vehInfos.class] = vehInfos.submaterials end
     if vehInfos.texture then AVVehMaker.Mats["vmaker_" .. vehInfos.class] = vehInfos.texture end
 end
